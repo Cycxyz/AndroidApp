@@ -18,9 +18,14 @@ public class FunctionTypeActivity extends AppCompatActivity {
 
     public void goBack(View view)
     {
-        Intent intent = new Intent(this, MainActivity.class);
-//        Spinner spinner = findViewById(R.id.spinner);
-//        intent.putExtra("Chosen function", spinner.getSelectedItemId());
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+    public void goChoseCoefficients(View view)
+    {
+        Intent intent = new Intent(this, CoefficientsActivity.class);
+        Spinner spinner = findViewById(R.id.spinner);
+        intent.putExtra(Globals.FUNCTION_TYPE_NAME, FunctionType.values()[(int)spinner.getSelectedItemId()]);
         startActivity(intent);
     }
 }

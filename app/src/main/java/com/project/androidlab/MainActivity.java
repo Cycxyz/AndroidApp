@@ -14,6 +14,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+;
+
 public class MainActivity extends AppCompatActivity {
 
     private final static String FILE_NAME = "document.txt";
