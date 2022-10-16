@@ -62,4 +62,9 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(this, InfoActivity.class));
     }
+
+    public void goToFunctionType(View view)
+    {
+        startActivity(new Intent(this, FunctionTypeActivity.class));
+    }
 }

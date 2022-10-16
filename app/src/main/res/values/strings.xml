@@ -3,4 +3,11 @@
     <string name="aboutMe">Роботу виконав студент 4
         курсу групи ТТП-41 \n Бурцевич Владислав
         Михайлович</string>
+    <string name="choseFunc">Choose function type</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string-array name="functions_array">
+        <item>Power function</item>
+        <item>Exponential function</item>
+    </string-array>
 </resources>

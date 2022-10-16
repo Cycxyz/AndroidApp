@@ -13,6 +13,13 @@
         android:theme="@style/Theme.AndroidLab"
         tools:targetApi="31">
         <activity
+            android:name=".FunctionTypeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".InfoActivity"
             android:exported="false">
             <meta-data
