@@ -3,13 +3,10 @@ package com.project.androidlab;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
 @RequiresApi(api = Build.VERSION_CODES.N)
@@ -28,7 +25,7 @@ public class CoefficientsActivity extends AppCompatActivity {
 
     private void setFunctionLabel(String str)
     {
-        TextView textView = findViewById(R.id.textView3);
+        TextView textView = findViewById(R.id.functionLabelView);
         textView.setText(str);
     }
 
