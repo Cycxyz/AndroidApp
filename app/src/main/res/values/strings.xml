@@ -6,6 +6,8 @@
     <string name="choseFunc">Choose function type</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="expFunc">y = a * b ^ x + c</string>
+    <string name="powerFunc"> a * x ^ b + c</string>
     <string-array name="functions_array">
         <item>Power function</item>
         <item>Exponential function</item>
