@@ -1,8 +1,10 @@
 package com.project.androidlab;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -21,6 +23,7 @@ public class FunctionTypeActivity extends AppCompatActivity {
         startActivity(new Intent(this, MainActivity.class));
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void goChoseCoefficients(View view)
     {
         Intent intent = new Intent(this, CoefficientsActivity.class);

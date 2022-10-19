@@ -7,11 +7,14 @@
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="expFunc">y = a * b ^ x + c</string>
-    <string name="powerFunc"> a * x ^ b + c</string>
+    <string name="powerFunc">y = a * x ^ b + c</string>
     <string name="chooseCoefficients">Choose function coefficients</string>
     <string name="aValue">a = </string>
     <string name="bValue">b = </string>
     <string name="cValue">c = </string>
+    <string name="calculations">To calculations</string>
+    <string name="coefficientsFrom">Coefficients from</string>
+    <string name="to">to</string>
     <string-array name="functions_array">
         <item>Power function</item>
         <item>Exponential function</item>
