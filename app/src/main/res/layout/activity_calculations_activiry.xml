@@ -89,27 +89,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
+                    android:id="@+id/Nothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="24dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:height="24dp"
+                    android:text="Result" />
+                <TextView
+                    android:id="@+id/Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:height="24dp"
+                    android:text="Time" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
                     android:id="@+id/rectangleView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
                     android:height="24dp"
-                    android:text="Rectangle method. Result: " />
+                    android:text="Rectangle method" />
                 <TextView
                     android:id="@+id/rectangleResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
-                />
-                <TextView
-                    android:id="@+id/rectangleTimeView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:height="24dp"
-                    android:text="Time: " />
+                    android:text="Calculating..." />
                 />
                 <TextView
                     android:id="@+id/rectangleTimeResult"
@@ -117,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
+                    android:text="Calculating..." />
                 />
                 />
             </TableRow>
@@ -131,22 +148,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
                     android:height="24dp"
-                    android:text="Trapezoidal method. Result: " />
+                    android:text="Trapezoidal method" />
                 <TextView
                     android:id="@+id/trapezoidalResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
-                />
-                <TextView
-                    android:id="@+id/trapezoidalTimeView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:height="24dp"
-                    android:text="Time: " />
+                    android:text="Calculating..." />
                 />
                 <TextView
                     android:id="@+id/trapezoidalTimeResult"
@@ -154,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
+                    android:text="Calculating..." />
                 />
                 />
             </TableRow>
@@ -167,22 +176,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
                     android:height="24dp"
-                    android:text="Simpson method. Result: " />
+                    android:text="Simpson method" />
                 <TextView
                     android:id="@+id/simpsonResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
-                />
-                <TextView
-                    android:id="@+id/simpsonTimeView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:height="24dp"
-                    android:text="Time: " />
+                    android:text="Calculating..." />
                 />
                 <TextView
                     android:id="@+id/simpsonTimeResult"
@@ -190,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:height="24dp"
-                    android:text="" />
+                    android:text="Calculating..." />
                 />
                 />
             </TableRow>

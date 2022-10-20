@@ -7,4 +7,5 @@ public class Globals {
     public static String COEFFICIENT_C = "Coefficient c";
     public static String BEGIN_PERIOD = "Period begin";
     public static String END_PERIOD = "Period end";
+    public static String FILE_NAME = "file.txt";
 }

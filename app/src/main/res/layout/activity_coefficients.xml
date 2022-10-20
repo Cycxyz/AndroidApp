@@ -6,191 +6,249 @@
     android:layout_height="match_parent"
     tools:context=".CoefficientsActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp">
+
     <TextView
         android:id="@+id/functionLabelView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:text="Function type"
-        app:layout_constraintBottom_toTopOf="@id/aView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleView" />
+ />
 
     <TextView
         android:id="@+id/TitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
         android:text="@string/chooseCoefficients"
-        app:layout_constraintBottom_toTopOf="@+id/functionLabelView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+ />
 
-    <EditText
-        android:id="@+id/aValueEdit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="138dp"
-        android:ems="10"
-        android:hint="0"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/bValueEdit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/aView"
-        app:layout_constraintTop_toBottomOf="@+id/functionLabelView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/bValueEdit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="138dp"
-        android:ems="10"
-        android:hint="0"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/cValueEdit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bView"
-        app:layout_constraintTop_toBottomOf="@+id/aValueEdit" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/aView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aValue" />
 
-    <EditText
-        android:id="@+id/cValueEdit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="3dp"
-        android:ems="10"
-        android:hint="0"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/beginPeriodEdit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cView"
-        app:layout_constraintTop_toBottomOf="@+id/bValueEdit" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:id="@+id/aValueEdit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="0"
+                android:layout_marginRight="100dp"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/beginPeriodEdit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="51dp"
-        android:ems="10"
-        android:hint="0"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/calculationsButton"
-        app:layout_constraintEnd_toStartOf="@+id/endPeriodView"
-        app:layout_constraintStart_toEndOf="@+id/beginPeriodView"
-        app:layout_constraintTop_toBottomOf="@+id/cValueEdit" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/endPeriodEdit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="51dp"
-        android:ems="10"
-        android:hint="0"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/calculationsButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/endPeriodView"
-        app:layout_constraintTop_toBottomOf="@+id/cValueEdit" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/bView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bValue" />
 
-    <TextView
-        android:id="@+id/aView"
-        android:layout_width="wrap_content"
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:id="@+id/bValueEdit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="0"
+                android:layout_marginRight="100dp"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/cView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cValue" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/cValueEdit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/aValue"
-        app:layout_constraintBottom_toTopOf="@+id/bView"
-        app:layout_constraintEnd_toStartOf="@+id/aValueEdit"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/functionLabelView" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/bView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/bValue"
-        app:layout_constraintBottom_toTopOf="@+id/cView"
-        app:layout_constraintEnd_toStartOf="@+id/bValueEdit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aView" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/beginPeriodView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coefficientsFrom" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/cView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="37dp"
-        android:text="@string/cValue"
-        app:layout_constraintBottom_toTopOf="@+id/beginPeriodView"
-        app:layout_constraintEnd_toStartOf="@+id/cValueEdit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bView" />
+        <EditText
+            android:id="@+id/beginPeriodEdit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginRight="100dp"
+            android:inputType="numberSigned|numberDecimal"/>
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="69dp"
-        android:layout_marginBottom="102dp"
-        android:onClick="goBack"
-        android:text="@string/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/calculationsButton"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beginPeriodView" />
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/endPeriodView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/endPeriodEdit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="100dp"
+            android:hint="0"
+            android:inputType="numberSigned|numberDecimal" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/calculationsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="110dp"
-        android:onClick="goToCalculations"
-        android:text="@string/calculations"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
-        app:layout_constraintTop_toBottomOf="@+id/beginPeriodEdit" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/beginPeriodView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="29dp"
-        android:text="@string/coefficientsFrom"
-        app:layout_constraintBottom_toTopOf="@+id/backButton"
-        app:layout_constraintEnd_toStartOf="@+id/beginPeriodEdit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cView" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/endPeriodView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="66dp"
-        android:text="to"
-        app:layout_constraintBottom_toTopOf="@+id/calculationsButton"
-        app:layout_constraintEnd_toStartOf="@+id/endPeriodEdit"
-        app:layout_constraintStart_toEndOf="@+id/beginPeriodEdit"
-        app:layout_constraintTop_toBottomOf="@+id/cValueEdit" />
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goBack"
+                android:text="@string/back" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/calculationsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToCalculations"
+
+                android:text="@string/calculations" />
+            <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/writeCoefficientsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveText"
+                android:text="Write coefficients to file" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/readCoefficientsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="openText"
+                android:text="Read coefficients from file" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -88,12 +88,15 @@ public class CalculationsActivity extends AppCompatActivity {
         beginPeriod = extras.getDouble(Globals.BEGIN_PERIOD);
         endPeriod = extras.getDouble(Globals.END_PERIOD);
         type = (FunctionType) extras.get(Globals.FUNCTION_TYPE_NAME);
+
         String func = getFunction(type);
         func = func.replace("a", Double.toString(aValue));
         func = func.replace("b", Double.toString(bValue));
         func = func.replace("c", Double.toString(cValue));
+
         TextView functionLabelView = findViewById(R.id.functionLabelView);
         functionLabelView.setText(func);
+
         Function<Double, Double> integratingFunction;
         if (type == FunctionType.EXPOTENTIAL) {
             integratingFunction = x -> aValue * Math.pow(bValue, x) + cValue;
@@ -101,6 +104,7 @@ public class CalculationsActivity extends AppCompatActivity {
         else {
             integratingFunction = x -> aValue * Math.pow(x, bValue) + cValue;
         }
+
         TextView fromValue = findViewById(R.id.fromValue);
         fromValue.setText(Double.toString(beginPeriod));
         TextView toValue = findViewById(R.id.toValue);
@@ -230,6 +234,11 @@ public class CalculationsActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(this, CoefficientsActivity.class);
         intent.putExtra(Globals.FUNCTION_TYPE_NAME, type);
+        intent.putExtra(Globals.COEFFICIENT_A, aValue);
+        intent.putExtra(Globals.COEFFICIENT_B, bValue);
+        intent.putExtra(Globals.COEFFICIENT_C, cValue);
+        intent.putExtra(Globals.BEGIN_PERIOD, beginPeriod);
+        intent.putExtra(Globals.END_PERIOD, endPeriod);
         startActivity(intent);
     }
 
