@@ -23,4 +23,14 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(this, FunctionTypeActivity.class));
     }
+
+    public void goToUniversities(View view)
+    {
+        startActivity(new Intent(this, UniversitiesActivity.class));
+    }
+
+    public void goToContacts(View view)
+    {
+        startActivity(new Intent(this, ContactsActivity.class));
+    }
 }

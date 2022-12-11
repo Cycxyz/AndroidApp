@@ -13,6 +13,20 @@
         android:theme="@style/Theme.AndroidLab"
         tools:targetApi="31">
         <activity
+            android:name=".UniversitiesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CalculationsActivity"
             android:exported="false">
             <meta-data
